@@ -93,7 +93,7 @@
 ```
 然后计算出一共分为几页
 ```javascript
-       var totalPage = 0;//总页数
+        var totalPage = 0;//总页数
         var pageSize = psize;//每页显示行数
         if (num / pageSize > parseInt(num / pageSize)) {//假设有20条数据，15条数据页 
             totalPage = parseInt(num / pageSize) + 1;//1.333>1 ,所以分为两页
