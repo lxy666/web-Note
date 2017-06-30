@@ -80,7 +80,8 @@ text.html代码
 
 
 ![结果显示.png](http://upload-images.jianshu.io/upload_images/3229842-17dad69ebc34964f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-><%=title%> 是对title进行html转义
+
+<%=title%> 是对title进行html转义
 co-views 是用来渲染模板的库，而 render 是它生成的实例
 
 
