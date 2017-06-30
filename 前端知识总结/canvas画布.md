@@ -1,6 +1,6 @@
 ><canvas>是html5新增的画布元素，为了客户端矢量图形而设计的，它自己没有行为(仅仅是一个画图的容器)，但是定义了一个 API 支持脚本化客户端绘图操作。canvas默认的宽为300px，高为150px，你可以直接在该对象上指定宽度和高度，但是，其大多数功能都可以通过 CanvasRenderingContext2D 对象获得。 这是通过 Canvas 对象的 getContext() 方法并且把直接量字符串 "2d" 作为唯一的参数传递给它而获得的。
 
-````
+````javascript
 html代码
 //添加canvas标签
 <canvas width=500 height=500></canvas>
@@ -17,7 +17,7 @@ Internet Explorer 9+, Firefox, Opera, Chrome 以及 Safari 支持 <canvas> 标�
 ``
 ### 一、路径绘制
 
-````
+````html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +46,7 @@ Internet Explorer 9+, Firefox, Opera, Chrome 以及 Safari 支持 <canvas> 标�
 ![效果图](http://upload-images.jianshu.io/upload_images/3229842-070aa84bd35e4fe8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 <br>在上述js代码中加入 ctx.closePath();创建一条从当前点回到起始点的路径。
-````
+````javascript
 //js代码
 var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
@@ -60,7 +60,7 @@ var canvas = document.getElementById('canvas');
 ![效果图](http://upload-images.jianshu.io/upload_images/3229842-f1fa772173f8b969.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 <br>另外，可以填加 lineWidth 设置线段宽度，fill(),进行填充，默认填充色为黑色。当存在fill()时，代码种无 ctx.closePath()也可以进行填充。
-````
+````javascript
    //js代码
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
@@ -79,7 +79,7 @@ var canvas = document.getElementById('canvas');
 2.完成一条路径后要重新开始另一条路径时必须使用beginPath()方法, beginPath开始子路径的一个新的集合。
 例如：
 
-````
+````javascript
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     ctx.strokeStyle= 'red';
@@ -102,7 +102,7 @@ var canvas = document.getElementById('canvas');
 ### 二、文本
 >绘制实心文本、空心文本。
 
-````
+````javascript
 var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     ctx.font = "30px Arial";
@@ -128,7 +128,7 @@ var canvas = document.getElementById('canvas');
 ##### 4、ctx.clearRect(x, y, dx, dy);
        擦除某一区域，x,y为需擦除区域的左上点的坐标，dx，dy宽高。
 
-````
+````javascript
 var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     ctx.fillRect(50, 50, 50, 100);
@@ -144,7 +144,7 @@ var canvas = document.getElementById('canvas');
 
 ![各位置的度数](http://upload-images.jianshu.io/upload_images/3229842-a080832faec42f19.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-````
+````javascript
    var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     ctx.arc(100,100,50,0,Math.PI/180*90);
@@ -152,7 +152,7 @@ var canvas = document.getElementById('canvas');
 ````
 
 ![顺时针 90度圆弧](http://upload-images.jianshu.io/upload_images/3229842-24ab84714fdebedb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-````
+````javascript
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     ctx.arc(100,100,50,0,Math.PI/180*270);
@@ -160,7 +160,7 @@ var canvas = document.getElementById('canvas');
 ````
 
 ![顺时针 270度圆弧](http://upload-images.jianshu.io/upload_images/3229842-af5cafa3ee19eced.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-````
+````javascript
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     ctx.arc(100,100,50,0,Math.PI/180*90,1);
@@ -170,18 +170,20 @@ var canvas = document.getElementById('canvas');
 ### 五、图片填充
 >createPattern(image,"repeat|repeat-x|repeat-y|no-repeat")
 
-````
+````html
     //html代码
     <canvas id="canvas" width="500" height="500"></canvas>
     <img src="" style="visibility: hidden">
     //js代码
-    var canvas = document.getElementById('canvas');
+    <script>
+    var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     window.onload = function () {
         var Img = document.getElementsByTagName('img')[0];
         ctx.fillStyle = ctx.createPattern(Img, 'repeat');//设置为重复
         ctx.fillRect(0, 0, 500, 400);//填充范围
     };
+    </script>
 ````
 
 ![效果图](http://upload-images.jianshu.io/upload_images/3229842-345819c436e06b0a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -196,7 +198,7 @@ addColorStop()方法指定颜色停止，参数使用坐标来描述，可以是
 使用渐变，设置fillStyle或strokeStyle的值为 渐变，然后绘制形状，如矩形，文本，或一条线。
 
 #### 使用createLinearGradient
-````
+````javascript
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     var bg = ctx.createLinearGradient(0, 0, 0, 500);
@@ -208,7 +210,7 @@ addColorStop()方法指定颜色停止，参数使用坐标来描述，可以是
 ````
 ![效果图](http://upload-images.jianshu.io/upload_images/3229842-c0e401433e2225da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-````
+````javascript
   var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     var gradient_font = ctx.createLinearGradient(0, 0, canvas.width, 0);
@@ -223,7 +225,7 @@ addColorStop()方法指定颜色停止，参数使用坐标来描述，可以是
 
 ![文字渐变效果](http://upload-images.jianshu.io/upload_images/3229842-48245eac32c45ef6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 #### 使用createRadialGradient
-````
+````javascript
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     var bg = ctx.createRadialGradient(150, 150, 50, 150, 150, 110);
