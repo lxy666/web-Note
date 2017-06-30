@@ -9,7 +9,7 @@ function foo(){}
 ![原型.png](http://upload-images.jianshu.io/upload_images/3229842-48de74a3cfec7e9d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 foo这个函数就有个prototype属性，并且它默认有两个属性:constructor和__proto__。constructor属性会指向它本身foo，__proto__是在chrome中暴露的(不是一个标准属性)，那么foo.prototype的原型会指向Object.prototype。因此Object.prototype上的一些方法toString，valueOf才会被每个一般的对象所使用。
-```
+```javascript
 function foo(){}
 foo.prototype.x = 1;
 var obj3 = new foo();//实例对象
@@ -21,7 +21,7 @@ var obj3 = new foo();//实例对象
 >在这个例子中，obj3.__proto__===foo.prototype,即，每个对象都有一个__proto__属性，指向创建该对象的函数的prototype。Object.prototype是一个特例，它的__proto__指向的是null。
 
 #### 下面是一个例子
-````
+```javascript
 // 声明构造函数
 function Person(name, age) {
     this.name = name;
@@ -35,7 +35,7 @@ Person.prototype.getName = function() {
 
 var p1 = new Person('tim', 10);
 var p2 = new Person('jak', 22);
-````
+```
 
 ![图示.png](http://upload-images.jianshu.io/upload_images/3229842-3e7187f42cdfcda9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -44,7 +44,7 @@ var p2 = new Person('jak', 22);
 ### 二、原型链
 >每一个构造函数都有一个原型对象，当我们让某一原型对象等于另一构造函数的实例，此时该原型对象就包含一个指针，该指针指向这一构造函数的原型对象，该指针指向的原型对象中包含一个指向这一构造函数的指针，同样我们可以令该指针指向的原型对象等于另一构造函数的实例，如此递进，则形成一条实例与原型的链条，即原型链。
 
-````
+```javascript
  function Parent() {
         this.name = 'parent';
     };
@@ -61,7 +61,7 @@ var p2 = new Person('jak', 22);
     var child = new Child();
     console.log(child.getName()); //输出parent
     console.log(child.getChildName());  //输出child
-````
+```
 在上面的例子中，child实例指向Child原型，Child原型等于Parent实例，即指向Parent原型。可见本质即是以一个构造函数的实例重写原型对象，形成原型链。
 
 >#### 总结
