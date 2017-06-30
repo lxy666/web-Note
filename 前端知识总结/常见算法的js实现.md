@@ -101,7 +101,7 @@ function reverseString(str){
   return arr.join("");
 }
 ```
-####3、生成指定长度随机字符串
+#### 3、生成指定长度随机字符串
 ```javascript
 function randomString(n){
   var str = 'abcdefghijklmnopqrstuvwxyz0123456789';
@@ -112,7 +112,7 @@ function randomString(n){
   return tmp;
 }
 ```
-####4、统计字符串中次数最多字母
+#### 4、统计字符串中次数最多字母
 ```javascript
 function findMaxDuplicateChar(str) {
   if(str.length == 1) {
