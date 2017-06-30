@@ -1,14 +1,16 @@
 ><canvas>是html5新增的画布元素，为了客户端矢量图形而设计的，它自己没有行为(仅仅是一个画图的容器)，但是定义了一个 API 支持脚本化客户端绘图操作。canvas默认的宽为300px，高为150px，你可以直接在该对象上指定宽度和高度，但是，其大多数功能都可以通过 CanvasRenderingContext2D 对象获得。 这是通过 Canvas 对象的 getContext() 方法并且把直接量字符串 "2d" 作为唯一的参数传递给它而获得的。
 
 ````javascript
-html代码
+<!--html代码-->
 //添加canvas标签
 <canvas width=500 height=500></canvas>
-js代码
+<script>
+//js代码
 // 获得canavs元素
 var canvas =document.getElementById('myCanvas');
 // 获得canvas上下文对象
 var ctx = canvas.getContext('2d');
+</script>
 ````
 
 ``
