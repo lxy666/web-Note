@@ -1,7 +1,7 @@
 ### 一、原型
 JavaScript中创建的每一个函数，都有一个prototype属性，该属性是一个指针，指向一个对象。这个对象，就是我们这里说的原型。
 所有的原型对象都会有一个constructor属性，这个属性包含一个指向prototype属性所在函数的指针。
-```
+```javascript
 //函数声明创一个空函数
 function foo(){}
 ```
