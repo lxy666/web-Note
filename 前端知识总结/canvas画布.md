@@ -15,7 +15,7 @@ var ctx = canvas.getContext('2d');
 Internet Explorer 9+, Firefox, Opera, Chrome 以及 Safari 支持 <canvas> 标签。
 注释：Internet Explorer 8 以及更早的版本不支持 <canvas> 标签。
 ``
-###一、路径绘制
+### 一、路径绘制
 
 ````
 <!DOCTYPE html>
@@ -72,7 +72,7 @@ var canvas = document.getElementById('canvas');
 
 ![效果图](http://upload-images.jianshu.io/upload_images/3229842-459990261d707d7c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-####说明
+#### 说明
 >1.fill和stroke方法都是作用在当前的所有子路径。
 2.完成一条路径后要重新开始另一条路径时必须使用beginPath()方法, beginPath开始子路径的一个新的集合。
 例如：
@@ -97,7 +97,7 @@ var canvas = document.getElementById('canvas');
 
 
 
-###二、文本
+### 二、文本
 >绘制实心文本、空心文本。
 
 ````
@@ -110,20 +110,20 @@ var canvas = document.getElementById('canvas');
 
 ![文本](http://upload-images.jianshu.io/upload_images/3229842-46303bf1922fbdd3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-###三、矩形
+### 三、矩形
 
->#####1、ctx.rect(x, y, dx, dy); 
+>##### 1、ctx.rect(x, y, dx, dy); 
         x,y在矩形左上点的坐标，dx，dy为矩形的宽高。
         需配合ctx.fill() ctx.stroke()使用
-#####2、ctx.fillRect(x, y, dx, dy);
+##### 2、ctx.fillRect(x, y, dx, dy);
        效果同
        ctx.rect(x, y, dx, dy);
        ctx.fill();
-#####3、ctx.strokeRect(x, y, dx, dy);
+##### 3、ctx.strokeRect(x, y, dx, dy);
        效果同
        ctx.rect(x, y, dx, dy);
        ctx.stroke();
-#####4、ctx.clearRect(x, y, dx, dy);
+##### 4、ctx.clearRect(x, y, dx, dy);
        擦除某一区域，x,y为需擦除区域的左上点的坐标，dx，dy宽高。
 
 ````
@@ -135,7 +135,7 @@ var canvas = document.getElementById('canvas');
 ````
 
 ![效果图](http://upload-images.jianshu.io/upload_images/3229842-724129ee76b3cc61.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-###四、弧形
+### 四、弧形
 >arc(x, y, r, 起始弧度, 结束弧度,弧形的⽅方向(0或1) )
 0顺时针 ，1逆时针
 默认为0
@@ -165,7 +165,7 @@ var canvas = document.getElementById('canvas');
     ctx.stroke();
 ````
 ![逆时针  0-90 圆弧](http://upload-images.jianshu.io/upload_images/3229842-cc742bf39f9352c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-###五、图片填充
+### 五、图片填充
 >createPattern(image,"repeat|repeat-x|repeat-y|no-repeat")
 
 ````
@@ -183,9 +183,9 @@ var canvas = document.getElementById('canvas');
 ````
 
 ![效果图](http://upload-images.jianshu.io/upload_images/3229842-345819c436e06b0a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-###六、渐变效果
->#####渐变可以填充在矩形, 圆形, 线条, 文本等等, 各种形状可以自己定义不同的颜色。
-######以下有两种不同的方式来设置Canvas渐变：
+### 六、渐变效果
+>##### 渐变可以填充在矩形, 圆形, 线条, 文本等等, 各种形状可以自己定义不同的颜色。
+###### 以下有两种不同的方式来设置Canvas渐变：
 createLinearGradient(x,y,x1,y1) - 线条渐变
 x、y为起点坐标，x1、y1为终点坐标
 createRadialGradient(x,y,r,x1,y1,r1) -径向渐变
@@ -193,7 +193,7 @@ x,y x1,y1为圆点，r、r1位半径
 addColorStop()方法指定颜色停止，参数使用坐标来描述，可以是0至1.
 使用渐变，设置fillStyle或strokeStyle的值为 渐变，然后绘制形状，如矩形，文本，或一条线。
 
-####使用createLinearGradient
+#### 使用createLinearGradient
 ````
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
@@ -220,7 +220,7 @@ addColorStop()方法指定颜色停止，参数使用坐标来描述，可以是
 ````
 
 ![文字渐变效果](http://upload-images.jianshu.io/upload_images/3229842-48245eac32c45ef6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-####使用createRadialGradient
+#### 使用createRadialGradient
 ````
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
