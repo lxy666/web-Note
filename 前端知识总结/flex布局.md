@@ -25,11 +25,11 @@
 
 ##### 1、flex-direction
 ``
-<br>决定主轴的方向，即项目的排列方向。
-<br>row:主轴为水平方向，项目沿主轴从左至右排列
-<br>column：主轴为竖直方向，项目沿主轴从上至下排列
-<br>row-reverse：主轴水平，项目从右至左排列，与row反向
-<br>column-reverse：主轴竖直，项目从下至上排列，与column反向
+<br> 决定主轴的方向，即项目的排列方向。
+<br> row:主轴为水平方向，项目沿主轴从左至右排列
+<br> column：主轴为竖直方向，项目沿主轴从上至下排列
+<br> row-reverse：主轴水平，项目从右至左排列，与row反向
+<br> column-reverse：主轴竖直，项目从下至上排列，与column反向
 ``
 ##### 2、flex-wrap
 ``
