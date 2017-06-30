@@ -28,7 +28,7 @@ JSON风格文件的形式，面向文档存储：数据存储
 * 文件存储格式为BSON（一种JSON的扩展）。
 * 可通过网络访问。
 ****
-###何处能使用MongoDB？
+### 何处能使用MongoDB？
 * 大数据
 * 内容管理和交付
 * 移动和社交基础设施
@@ -47,23 +47,23 @@ JSON风格文件的形式，面向文档存储：数据存储
 
 ## MAC 系统下载安装 mongodb
    1、MAC MongoDB [下载地址](https://www.mongodb.com/download-center?jmp=nav#community)
-   2、下载MongoDB后，将mongodb-osx-x86_64-3.4.5.tar.ge 解压得到mongodb这个文件夹 复制到 /usr/local 路径下。
+  <br> 2、下载MongoDB后，将mongodb-osx-x86_64-3.4.5.tar.ge 解压得到mongodb这个文件夹 复制到 /usr/local 路径下。
 ``默认情况下在Finder中是看不到 /usr 这个目录的（终端用得溜的请略过），可以打开Finder后按shift + command +G 输入 /usr/local后回车便能看到这个隐藏的目录了``
 
 ![图示.png](http://upload-images.jianshu.io/upload_images/3229842-be8e3419e957ecf9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-3、上图中展示的就是我的本机的目录结构了，在/usr/local/mongodb/bin下就是mongodb的执行文件了。
-4、在根目录下新建 data 文件夹，data 文件夹里面创建一个db文件夹，里面是用来存放数据库及其数据。
-5、终端切换到/usr/local/mongodb/bin目录下。
-6、执行 ./mongod 启动服务端。
+<br>3、上图中展示的就是我的本机的目录结构了，在/usr/local/mongodb/bin下就是mongodb的执行文件了。
+<br>4、在根目录下新建 data 文件夹，data 文件夹里面创建一个db文件夹，里面是用来存放数据库及其数据。
+<br>5、终端切换到/usr/local/mongodb/bin目录下。
+<br>6、执行 ./mongod 启动服务端。
 
 ![执行 ./mongod后的图示.png](http://upload-images.jianshu.io/upload_images/3229842-aad43baa63a2cd97.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-7、 如上图，显示等候客户端连接的界面就代表启动成功了，如果不成功检查下/data/db文件夹的位置是否正确。如果不行，删除重建。
-8、打开浏览器，输入localhost:27017,会出现"It looks like you are trying to access MongoDB over HTTP on the native driver port."。
-9、重新打开一个终端 进入 /usr/local/mongodb/bin这个目录，执行./mongo 命令，即可连接上。
+<br>7、 如上图，显示等候客户端连接的界面就代表启动成功了，如果不成功检查下/data/db文件夹的位置是否正确。如果不行，删除重建。
+<br>8、打开浏览器，输入localhost:27017,会出现"It looks like you are trying to access MongoDB over HTTP on the native driver port."。
+<br>9、重新打开一个终端 进入 /usr/local/mongodb/bin这个目录，执行./mongo 命令，即可连接上。
 
 ![屏幕快照 2017-06-23 15.15.11.png](http://upload-images.jianshu.io/upload_images/3229842-23b7361115d30b44.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 #### 注意：第六步 和 第九步  输入的执行命令  不相同！
-10、如上图所示 ，终端上会一直显示一个 ‘>’ 符号，就代表连接成功了，此时就可以输入mongodb的sql命令：
+<br>10、如上图所示 ，终端上会一直显示一个 ‘>’ 符号，就代表连接成功了，此时就可以输入mongodb的sql命令：
 #### demo 是创建的一个集合名字
 ```
 show dbs //显示数据库
