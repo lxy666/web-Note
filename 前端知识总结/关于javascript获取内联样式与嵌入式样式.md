@@ -1,4 +1,4 @@
-###通过style属性设置背景图案
+### 通过style属性设置背景图案
 ```html
 <!--html-->
 <div id="change">
@@ -130,9 +130,9 @@ change.style.backgroundColor="purple";
 </body>
 </html>
 ```
-> #问题：
+> # 问题：
 当颜色选择器的颜色是使用嵌入式或者外部引入的方式添加时，``javascript``的``style``属性无效，获取不到颜色值。
-#解决方法：
+# 解决方法：
 >`` javascript``的``style``属性只能获取内联样式，对于外部引入样式和嵌入式样式需要用``currentStyle``属性。但是，``currentStyle``在``Firefox``和``Chrome``下不支持，需要使用如下兼容性代码:
 ```
 HTMLElement.prototype.__defineGetter__("currentStyle", function () {
