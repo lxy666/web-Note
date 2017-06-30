@@ -25,7 +25,7 @@
 ```
 >为了防止低版本的IE浏览器不支持after选择器或者某些属性，在最后加上zoom:1来清除浮动。
 
- ######为了实现inline-block的兼容的时候，我们会这么写：
+ ###### 为了实现inline-block的兼容的时候，我们会这么写：
 ```css
 {
   display: inline-block;
@@ -35,5 +35,5 @@
 
 ```
 >因为在IE6、IE7下，只有设置在默认显示方式为inline的元素上才会生效。前面说过，当内联元素的hasLayout为true的时候，可以给这个内联元素设定高度和宽度并得到期望的效果，所以这样做可以达到兼容inline-block的效果。
-
+<br>
 这里还要补充一点，为什么``*display:inline;*zoom:1;``前面有``*``，``*``放在css属性前面，表示这个属性仅仅应用到``Internet Explorer 7`` 以及以下版本。因为``Internet Explorer 7 ``以及以下承认非字母数字（除了下划线）前缀的属性。所以这里，IE7以上的版本作用的是``display: inline-block;``而在IE7及以下的版本中作用的是``display:inline;zoom:1``。
