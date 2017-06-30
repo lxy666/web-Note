@@ -1,14 +1,14 @@
 >在JavaScript的学习中，我们经常会遇到JavaScript的事件机制，例如，事件绑定、事件监听、事件委托（事件代理）等。
 
-##一、事件绑定
+## 一、事件绑定
 >要想让 JavaScript 对用户的操作作出响应，首先要对 DOM 元素绑定事件处理函数。所谓事件处理函数，就是处理用户操作的函数，不同的操作对应不同的名称。
 
-####在JavaScript中，有三种常用的绑定事件的方法：
+#### 在JavaScript中，有三种常用的绑定事件的方法：
 * DOM元素直接绑定
 * JavaScript代码绑定
 * 绑定事件监听函数
 
-#####1、DOM直接绑定事件
+##### 1、DOM直接绑定事件
 >我们可以在DOM元素上绑定onclick、onmouseover、onmouseout、onmousedown、onmouseup、ondblclick、onkeydown、onkeypress、onkeyup等。
 
 ```html
@@ -19,7 +19,7 @@ function hello(){
 }
 </script>
 ```
-#####2、JavaScript代码绑定事件
+##### 2、JavaScript代码绑定事件
 >在JavaScript代码中绑定事件可以使JavaScript代码与HTML标签分离，文档结构清晰，便于管理和开发。
 
 ```html
@@ -30,14 +30,14 @@ document.getElementById("btn").onclick = function(){
 }
 </script>
 ```
-#####3、使用事件监听绑定事件
+##### 3、使用事件监听绑定事件
 >绑定事件的另一种方法是用 addEventListener() 或 attachEvent() 来绑定事件监听函数。下面进行详细介绍。
 
-##二、事件监听
+## 二、事件监听
 
 >关于事件监听，W3C规范中定义了3个事件阶段，依次是捕获阶段、目标阶段、冒泡阶段。起初Netscape制定了JavaScript的一套事件驱动机制（即事件捕获）。随即IE也推出了自己的一套事件驱动机制（即事件冒泡）。最后W3C规范了两种事件机制，分为捕获阶段、目标阶段、冒泡阶段。IE8以前IE一直坚持自己的事件机制，IE9以后IE也支持了W3C规范。
 
-#####1、W3C规范
+##### 1、W3C规范
 语法：
 
 ```javascript
@@ -57,7 +57,7 @@ function hello(){
 }
 </script>
 ```
-#####2、IE标准
+##### 2、IE标准
 语法：
 
 ```
@@ -75,7 +75,7 @@ function hello(){
 }
 </script>
 ```
-####3、事件监听的优点
+#### 3、事件监听的优点
 3.1、常规的事件绑定只执行最后绑定的事件。
 
 ```html
@@ -149,7 +149,7 @@ addEventHandler(btn5,"click",hello1);//添加事件hello1
 addEventHandler(btn5,"click",hello2);//添加事件hello2
 removeEventHandler(btn5,"click",hello1);//移除事件hello1
 ```
-##三、事件委托
+## 三、事件委托
 
 >事件委托就是利用冒泡的原理，把事件加到父元素或祖先元素上，触发执行效果。
 
@@ -166,10 +166,10 @@ removeEventHandler(btn5,"click",hello1);//移除事件hello1
 ```
 上面只是个例子，代码尽可能的简化了。在实际的代码中 我们可能用到jQuery的live()、delegate()、bind()、on()等。
 
-####事件委托优点
+#### 事件委托优点
 >提高JavaScript性能。事件委托可以显著的提高事件的处理速度，减少内存的占用。 实例分析JavaScript中的事件委托和事件绑定 。
 
-######传统写法
+###### 传统写法
 
 ```html
 <ul id="list">
@@ -193,7 +193,7 @@ item3.onclick = function(){
 }
 </script>
 ```
-######事件委托
+###### 事件委托
 
 ```
 <ul id="list">
