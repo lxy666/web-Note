@@ -57,14 +57,14 @@ chrome的screenLeft和screenX是相等的（其目的是为了兼容ie和firefox
 
 # screen
 ## 1、
->##screen.width/height
+>## screen.width/height
 屏幕的宽度、高度（指的是屏幕的分辨率，单位为像素）。
 ``
 兼容：ie6/7/8/9/10、chrome、firefox。
 ``
 
 ## 2、
->##screen.availWidth/availHeight
+>## screen.availWidth/availHeight
 屏幕的可用宽度、高度（通常与屏幕的宽度、高度一致）。
 ``
 兼容：ie6/7/8/9/10、chrome、firefox。
@@ -72,7 +72,7 @@ chrome的screenLeft和screenX是相等的（其目的是为了兼容ie和firefox
 
 # element
 ## 1、
->##elment.clientWidth/clientHeight
+>## elment.clientWidth/clientHeight
 有滚动条时：clientWidth=元素左内边距宽度+元素宽度+元素右内边距宽度-元素垂直滚动条宽度
 无滚动条时：clientWidth=元素左内边距宽度+元素宽度+元素右内边距宽度
 
@@ -82,14 +82,14 @@ chrome的screenLeft和screenX是相等的（其目的是为了兼容ie和firefox
 ``
 
 ## 2、
->##element.clientLeft/clientTop
+>## element.clientLeft/clientTop
 clientLeft为左边框宽度，clientTop为上边框宽度。
 ``
 兼容：chrome、firefox、ie6/7/8/9/10。·
 ``
 
 ## 3、
->##element.offsetWidth/offsetHeight
+>## element.offsetWidth/offsetHeight
 offsetWidth=元素左边框宽度+元素左内边距宽度+元素宽度+元素右内边距宽度+元素右边框宽度。
 ``
 兼容：chrome、firefox、ie6/7/8/9/10。
