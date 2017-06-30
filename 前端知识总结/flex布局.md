@@ -24,26 +24,26 @@
 
 
 ##### 1、flex-direction
-``
+
 <br> 决定主轴的方向，即项目的排列方向。
 <br> row:主轴为水平方向，项目沿主轴从左至右排列
 <br> column：主轴为竖直方向，项目沿主轴从上至下排列
 <br> row-reverse：主轴水平，项目从右至左排列，与row反向
 <br> column-reverse：主轴竖直，项目从下至上排列，与column反向
-``
+
 ##### 2、flex-wrap
-``
+
 <br>默认情况下，项目排列在一条线上，即主轴上，flex-wrap决定，如果排列不下时，是否换行以及换行的方式。
 <br>nowrap（默认）：不换行。
 <br>wrap：换行，第一行在上方。
 <br>wrap-reverse：换行，第一行在下方。
-``
+
 ##### 3、flex-flow
-``
+
 flex-flow属性是flex-direction属性和flex-wrap属性的简写形式。如：row wrap|column wrap-reverse等。默认值为row nowrap，即横向排列 不换行。
-``
+
 ##### 4、justify-content
-``
+
 <br>决定item在主轴上的对齐方式，可能的值有flex-start（默认），flex-end，center，space-between，space-around。
 <br>当主轴沿水平方向时，具体含义为
 <br>flex-start：左对齐
@@ -51,9 +51,9 @@ flex-flow属性是flex-direction属性和flex-wrap属性的简写形式。如：
 <br>center：居中对齐
 <br>space- between：两端对齐
 <br>space-around：沿轴线均匀分布
-``
+
 ##### 5、align-items
-``
+
 <br>决定了item在交叉轴上的对齐方式，可能的值有flex-start、flex-end、center、baseline、stretch。
 <br>当主轴水平时，其具体含义为
 <br>flex-start：顶端对齐
@@ -61,9 +61,9 @@ flex-flow属性是flex-direction属性和flex-wrap属性的简写形式。如：
 <br>center：竖直方向上居中对齐
 <br>baseline：item第一行文字的底部对齐
 <br>stretch：当item未设置高度时，item将和容器等高对齐
-``
+
 ##### 6、align-content
-``
+
 <br>该属性定义了当有多根主轴时，即item不止一行时，多行在交叉轴轴上的对齐方式。如果项目只有一根轴线，该属性不起作用。注意当有多行时，定义了align-content后，align-items属性将失效。align-content可能值含义如下（假设主轴为水平方向）：
 <br>flex-start：左对齐
 <br>flex-end：右对齐
@@ -71,7 +71,7 @@ flex-flow属性是flex-direction属性和flex-wrap属性的简写形式。如：
 <br>space- between：两端对齐
 <br>space-around：沿轴线均匀分布
 <br>stretch：各行将根据其flex-grow值伸展以充分占据剩余空间
-``
+
 ## 四、flex item的属性
 >item的属性在item的style中设置。item六种属性。
 • order
@@ -102,7 +102,7 @@ order的值是整数，默认为0，整数越小，item排列越靠前。
 flex属性是flex-grow、flex-shrink和flex-basis三属性的简写总和。默认值为0 1 auto。后两个属性可选。
 ``
 ##### 6、align-self
-``
+
 <br>align-self属性允许item有自己独特的在交叉轴上的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。
 <br>auto：和父元素align-self的值一致
 <br>flex-start：顶端对齐
@@ -110,5 +110,5 @@ flex属性是flex-grow、flex-shrink和flex-basis三属性的简写总和。默�
 <br>center：竖直方向上居中对齐
 <br>baseline：item第一行文字的底部对齐
 <br>stretch：当item未设置高度时，item将和容器等高对齐
-``
+
 
