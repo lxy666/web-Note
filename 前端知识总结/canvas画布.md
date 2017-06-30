@@ -50,12 +50,12 @@ Internet Explorer 9+, Firefox, Opera, Chrome 以及 Safari 支持 <canvas> 标�
 ````javascript
 //js代码
 var canvas = document.getElementById('canvas');
-    var ctx = canvas.getContext('2d');
-        ctx.moveTo(100, 100);
-        ctx.lineTo(200, 100);
-        ctx.lineTo(200, 200);
-        ctx.closePath();
-        ctx.stroke();
+var ctx = canvas.getContext('2d');
+ctx.moveTo(100, 100);
+ctx.lineTo(200, 100);
+ctx.lineTo(200, 200);
+ctx.closePath();
+ctx.stroke();
 ````
 
 ![效果图](http://upload-images.jianshu.io/upload_images/3229842-f1fa772173f8b969.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -104,7 +104,7 @@ var canvas = document.getElementById('canvas');
 >绘制实心文本、空心文本。
 
 ````javascript
-var canvas = document.getElementById('canvas');
+    var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     ctx.font = "30px Arial";
     ctx.fillText("Hello World", 10, 50);
@@ -130,7 +130,7 @@ var canvas = document.getElementById('canvas');
        擦除某一区域，x,y为需擦除区域的左上点的坐标，dx，dy宽高。
 
 ````javascript
-var canvas = document.getElementById('canvas');
+    var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     ctx.fillRect(50, 50, 50, 100);
     ctx.strokeRect(200,50,50,100);
@@ -146,7 +146,7 @@ var canvas = document.getElementById('canvas');
 ![各位置的度数](http://upload-images.jianshu.io/upload_images/3229842-a080832faec42f19.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ````javascript
-   var canvas = document.getElementById('canvas');
+    var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     ctx.arc(100,100,50,0,Math.PI/180*90);
     ctx.stroke();
