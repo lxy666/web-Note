@@ -15,7 +15,7 @@ document.body.clientHeight
 document.body.clientWidth
 ``
 ## 2、
->##window.outerWidth/outerHeight：
+>## window.outerWidth/outerHeight：
 浏览器外宽度（包含浏览器的边框，因各个浏览器的边框边一样，得到的值也是不一样的）。
 ``
 兼容：ie9/10、chrome、firefox。
@@ -23,7 +23,7 @@ document.body.clientWidth
 
 ### 注意：没有window.width属性。
 ## 3、
->##window.screenLeft/screenTop:  
+>## window.screenLeft/screenTop:  
 浏览器的位移
 ie浏览器的内边缘距离屏幕边缘的距离。
 chrome浏览器的外边缘距离屏幕边缘的距离。
