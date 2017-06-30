@@ -44,7 +44,8 @@ Internet Explorer 9+, Firefox, Opera, Chrome 以及 Safari 支持 <canvas> 标�
 ````
 
 ![效果图](http://upload-images.jianshu.io/upload_images/3229842-070aa84bd35e4fe8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-在上述js代码中加入 ctx.closePath();创建一条从当前点回到起始点的路径。
+
+<br>在上述js代码中加入 ctx.closePath();创建一条从当前点回到起始点的路径。
 ````
 //js代码
 var canvas = document.getElementById('canvas');
