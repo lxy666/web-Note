@@ -37,17 +37,17 @@ this.body 用于控制输出到页面的内容。
 ### 官网依赖模块包括:
 
 >“koa”: ,koa核心模块 
-“koa-route”: 路由模块 
-“koa-static”: 静态文件加载 
-“koa-static-cache”: 静态文件缓存加载 
-“co”:异步流
- “co-fs”: 文件流 
-“co-body”:post JSON模块 
-“co-views”: 视图模块 
-“koa-compose”:函数合并执行 
-“swig”: 模版引擎 
-“xss”:方式xss 攻击 
-“mongoose”:mongo链接库
+  “koa-route”: 路由模块 
+  “koa-static”: 静态文件加载 
+  “koa-static-cache”: 静态文件缓存加载 
+  “co”:异步流
+  “co-fs”: 文件流 
+  “co-body”:post JSON模块 
+  “co-views”: 视图模块 
+  “koa-compose”:函数合并执行 
+  “swig”: 模版引擎 
+  “xss”:方式xss 攻击 
+  “mongoose”:mongo链接库
 
 #### 例子：
 ````
@@ -85,6 +85,6 @@ text.html代码
 co-views 是用来渲染模板的库，而 render 是它生成的实例
 
 
->##### function *() {}和yield是啥？
+>#### function *() {}和yield是啥？
 这个其实是 Koa 的精髓所在，首先app.use(...)和controller.get(path, ...)传入的参数都是一种写得很像函数的东西，但不同之处是函数的写法是function foo() {...}，而这里的写法多了一个星号，即function *foo() {}。这种写法其实就是 ES6 里的 generator。而yield正是配合这个写法的一种语法。
 
