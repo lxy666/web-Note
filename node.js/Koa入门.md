@@ -37,17 +37,17 @@ this.body 用于控制输出到页面的内容。
 ### 官网依赖模块包括:
 
 >“koa”: ,koa核心模块 
-  “koa-route”: 路由模块 
-  “koa-static”: 静态文件加载 
-  “koa-static-cache”: 静态文件缓存加载 
-  “co”:异步流
-  “co-fs”: 文件流 
-  “co-body”:post JSON模块 
-  “co-views”: 视图模块 
-  “koa-compose”:函数合并执行 
-  “swig”: 模版引擎 
-  “xss”:方式xss 攻击 
-  “mongoose”:mongo链接库
+  <br>“koa-route”: 路由模块 
+  <br>“koa-static”: 静态文件加载 
+  <br>“koa-static-cache”: 静态文件缓存加载 
+  <br>“co”:异步流
+  <br>“co-fs”: 文件流 
+  <br>“co-body”:post JSON模块 
+  <br>“co-views”: 视图模块 
+  <br>“koa-compose”:函数合并执行 
+  <br>“swig”: 模版引擎 
+  <br>“xss”:方式xss 攻击 
+  <br>“mongoose”:mongo链接库
 
 #### 例子：
 ````
