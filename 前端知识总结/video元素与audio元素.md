@@ -67,4 +67,5 @@ HTML5使得在页面中加载音频元素变得非常简单。
 ```
 
 ![audio元素](http://upload-images.jianshu.io/upload_images/3229842-38bb4f91de6faa73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 同样可以使用js控制audio 元素，就像控制video元素一样。
