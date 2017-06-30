@@ -1,4 +1,4 @@
-##匿名函数
+## 匿名函数
 * JavaScript函数可以是匿名的。这意味着你可以从函数声明中省略函数名。但是，函数必须存储在变量中。
 * ``var addNumbers = function (x, y) { return x + y; }``上述语法被也被称为函数表达式。
 * 你可以把变量addNumbers 当作函数名，以及像下面这样调用该函数。``var sum = addNumbers(2, 3);``
@@ -18,8 +18,8 @@ var sum = calculate(add, 2, 3); // sum = 5
 var multiplication = calculate(multiply, 2, 3); // multiplication = 6
 ```
 
-##关于参数
-###缺少参数
+## 关于参数
+### 缺少参数
 调用函数时，函数的参数数量可以比要求的更少或更多。如果你调用的函数的参数比声明的少，那么缺少的参数被设置为undefined。
 ```
 function callMe(a, b, c) {
@@ -29,7 +29,7 @@ callMe("Code", "Morning"); // c is undefined
 callMe("Learn", "JavaScript", "Functions"); //  c is string
 ```
 
-###Arguments对象
+### Arguments对象
 所有的JavaScript函数有一个特殊的对象，叫做arguments，它是在函数调用过程中传递的参数数组。该对象可以被用来访问单个参数或获得传递到函数的参数总数。
 ```
 function callMe() {
@@ -42,7 +42,7 @@ function callMe() {
 ```
 >此函数假设没有传递任何参数，但就像我说的，你可以传递任何数量的参数到JavaScript函数。我可以像这样调用这个函数：``callMe("Code", "Morning", "Mr. Programmer");//  Code Morning Mr.Programmer Total arguments passed: 3``每个参数可以从arguments对象作为一个数组项被访问。被传递给函数的arguments的总数可从arguments.length属性获得。
 
-###默认参数
+### 默认参数
 ```
 function greetMyVisitors(name, profession = "The cool programmer") {
     alert("Welcome Mr. " + name + ", " + profession);
@@ -59,7 +59,7 @@ greetMyVisitors("Bob Martin");
 greetMyVisitors("John Papa", undefined); 
 // Welcome Mr. John Papa, The cool programmer
 ```
-##嵌套函数
+## 嵌套函数
 
 函数可以在它的内部包含一个或多个函数。内部函数可能会在内部再次包含函数。
 ```
@@ -79,7 +79,7 @@ function code() {
 wakeUpAndCode();//  I just woke up   I am ready to code now
 ```
 函数``wakeUpAndCode``包含两个内部函数``wakeUp``和``code``。当调用``wakeUpAndCode``时，函数主体开始执行函数主体。在外部函数中只有两个可执行语句，调用``wakeUp``和``code``的方法。调用``wakeUp``将执行内部``wakeUp``函数，这将写入``I just woke up``到控制台。调用``code``将会写入``I am ready to code now``到控制台。内部函数可以访问所有外部函数的变量和参数。内部函数是函数内部某种private实现，并且不能从外部函数以外被调用。
-##立即执行函数表达式
+## 立即执行函数表达式
 ```
 (function() { 
   // Your code here
@@ -118,8 +118,8 @@ this.canWriteJavaScript = function() {
 var dotnetProgrammer = new Programmer("Atul Mishra", "Prowareness", ".NET");``
 虽然也可以创建一个使用对象文本语法带有相同属性和方法的对象，但我们需要多次编写相同的代码。构造函数使得可以一次定义对象，并创建真正的实例。
 
-##注意
-######始终使用new关键字来从构造器创建新的对象。
+## 注意
+###### 始终使用new关键字来从构造器创建新的对象。
 
 * ``var jsProgrammer = Programmer("Douglas Crockford", "Yahoo", "JavaScript")``        
 最终将添加所有属性和方法到全局的window对象，原因是，除非明确指定，否则“this”指向全局的window对象。使用new 设置“this”上下文到被创建的当前对象。
