@@ -8,7 +8,7 @@
 相对于当前对象内文本的字体尺寸。如当前对行内文本的字体尺寸未被人为设置，则相对于浏览器的默认字体尺寸。任意浏览器的默认字体大小都是16px。em的值并不是固定的；em会继承父级元素的字体大小。
 ``
 
-````
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +33,7 @@
 </div>
 </body>
 </html>
-````
+```
 
 ![测试结果](http://upload-images.jianshu.io/upload_images/3229842-be658f8a62dacb8d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -46,12 +46,12 @@ div3的font-size=2*64px = 128px;
 ``
 em根据父级元素的大小而变化，但是如果嵌套了多个元素，它的大小就不好计算了，这时出现了rem，与em的区别在于rem是相对于根元素的,因此不受它的父类影响。css3新加属性，chrome/firefox/IE9+支持。
 ``
-````
+```css
  /*在em的示例的css代码中添加*/
 .div2{
       font-size: 2rem;
   }
-````
+```
 
 ![测试结果](http://upload-images.jianshu.io/upload_images/3229842-2adc3a9be9858f24.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ### 3、vw、vh
