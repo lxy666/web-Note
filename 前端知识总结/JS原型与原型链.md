@@ -1,19 +1,19 @@
 ### 一、原型
 JavaScript中创建的每一个函数，都有一个prototype属性，该属性是一个指针，指向一个对象。这个对象，就是我们这里说的原型。
 所有的原型对象都会有一个constructor属性，这个属性包含一个指向prototype属性所在函数的指针。
-````
+```
 //函数声明创一个空函数
 function foo(){}
-````
+```
 
 ![原型.png](http://upload-images.jianshu.io/upload_images/3229842-48de74a3cfec7e9d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 foo这个函数就有个prototype属性，并且它默认有两个属性:constructor和__proto__。constructor属性会指向它本身foo，__proto__是在chrome中暴露的(不是一个标准属性)，那么foo.prototype的原型会指向Object.prototype。因此Object.prototype上的一些方法toString，valueOf才会被每个一般的对象所使用。
-````
+```
 function foo(){}
 foo.prototype.x = 1;
 var obj3 = new foo();//实例对象
-````
+```
 
 ![实例对象](http://upload-images.jianshu.io/upload_images/3229842-1ec041fa1df1e55f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
