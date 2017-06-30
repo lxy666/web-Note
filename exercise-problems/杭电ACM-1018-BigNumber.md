@@ -1,16 +1,16 @@
-##Problem Description
+## Problem Description
 
 > In many applications very large integers numbers are required. Some of these applications are using keys for secure transmission of data, encryption, etc. In this problem you are given a number, you have to determine the number of digits in the factorial of the number.
 
-####Input
+#### Input
 
 > Input consists of several lines of integer numbers. The first line contains an integer n, which is the number of cases to be tested, followed by n lines, one integer 1 ≤ n ≤ 107 on each line.
 
-####Output
+#### Output
 
 > The output contains the number of digits in the factorial of the integers appearing in the input.
 
-####Sample Input
+#### Sample Input
 ````
 2
 
@@ -18,7 +18,7 @@
 
 20
 ````
-####Sample Output
+#### Sample Output
 ````
 7
 
@@ -28,9 +28,9 @@
 实例 输入2 ，然后输入两个数10、20，输入为7、19，分别为10的阶乘结果的位数和20的阶乘结果的位数。
 由于阶乘的结果是一个大数，Int类型无法解决，生活中大数的应用有很多，Java中有一个类BigIntegera表示大整数类。理论上可以表示无限大的数，用这个解决十分方便。
 
-###以下是关于BigIntegera的用法：
+### 以下是关于BigIntegera的用法：
 
-####Ⅰ基本函数：
+#### Ⅰ基本函数：
 ````
 1.valueOf(parament); 将参数转换为制定的类型
    比如 int a=3;
@@ -62,13 +62,13 @@
    BigInteger(String val,int radix);
    将指定基数的 BigInteger 的字符串表示形式转换为 BigInteger
 ````
-####Ⅱ.基本常量：
+#### Ⅱ.基本常量：
 ````
 A=BigInteger.ONE    1
 B=BigInteger.TEN    10
 C=BigInteger.ZERO   0
 ````
-####Ⅲ.基本操作
+#### Ⅲ.基本操作
  读入：
 用Scanner类定义对象进行控制台读入,Scanner类在java.util.*包中
 ````
