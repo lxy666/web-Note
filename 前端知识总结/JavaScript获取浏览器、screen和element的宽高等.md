@@ -147,7 +147,7 @@ event.clientY;
 
 
 # 总结
->屏幕宽度：window.screen.width。·
-浏览器内宽度：window.innerWidth || document.documentElement.clientWidth。
-元素内容宽度：element.clientWidth。
-元素占位宽度：element.offsetWidth。
+>屏幕宽度：window.screen.width。
+<br>浏览器内宽度：window.innerWidth || document.documentElement.clientWidth。
+<br>元素内容宽度：element.clientWidth。
+<br>元素占位宽度：element.offsetWidth。
