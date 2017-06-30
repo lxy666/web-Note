@@ -9,7 +9,7 @@
 //代码区
 </script> 
 ```
-####2. async： 
+#### 2. async： 
 异步加载，加载完就执行，async只能加载外部脚本，不能把js写在script 标签里。
 ```javascript
 <script type="text/javascript" src="demo.js" async="async"></script> 
