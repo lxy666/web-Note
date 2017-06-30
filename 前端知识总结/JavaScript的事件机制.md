@@ -127,6 +127,7 @@ function hello2(){
 
 ```html 
 <input type="button" value="click me" id="btn5">
+<script>
 //绑定监听事件
 function addEventHandler(target,type,fn){
  if(target.addEventListener){
@@ -148,6 +149,7 @@ var btn5 = document.getElementById("btn5");
 addEventHandler(btn5,"click",hello1);//添加事件hello1
 addEventHandler(btn5,"click",hello2);//添加事件hello2
 removeEventHandler(btn5,"click",hello1);//移除事件hello1
+</script>
 ```
 ## 三、事件委托
 
@@ -155,6 +157,7 @@ removeEventHandler(btn5,"click",hello1);//移除事件hello1
 
 ```html
     <input type="button" value="click me" id="btn6">
+    <script>
     var btn6 = document.getElementById("btn6");
     document.onclick = function(event){
      event = event || window.event;
@@ -163,6 +166,7 @@ removeEventHandler(btn5,"click",hello1);//移除事件hello1
      alert(btn5.value);
      }
     }
+    </script>
 ```
 上面只是个例子，代码尽可能的简化了。在实际的代码中 我们可能用到jQuery的live()、delegate()、bind()、on()等。
 
