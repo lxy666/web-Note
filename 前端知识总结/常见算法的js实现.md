@@ -1,6 +1,6 @@
-#排序算法
-####1、冒泡排序
-```
+# 排序算法
+#### 1、冒泡排序
+```javascript
 function bubbleSort(arr){
   var i = j = 0;
   for(i=1; i<arr.length; i++){
@@ -16,8 +16,8 @@ function bubbleSort(arr){
   return arr
 }
 ```
-####2、快速排序
-```
+#### 2、快速排序
+```javascript
 function quickSort(arr,l,r){
   if(l < r){
     var i = l, j = r, x = arr[i];
@@ -37,8 +37,8 @@ function quickSort(arr,l,r){
   }
 }
 ```
-####3、二路归并
-```
+#### 3、二路归并
+```javascript
 function merge(left, right) {
     var result = [],
         il = 0,
@@ -59,9 +59,9 @@ function merge(left, right) {
     return result;
 }
 ```
-#字符串操作
-####1、判断回文字符串
-```
+# 字符串操作
+#### 1、判断回文字符串
+```javascript
 function palindrome(str){
   // \W匹配任何非单词字符。等价于“[^A-Za-z0-9_]”。
   var re = /[\W_]/g;
@@ -75,10 +75,10 @@ function palindrome(str){
   return palindrome(lowRegStr.slice(1,lowRegStr.length-1));
 }
 ```
-####2、翻转字符串
+#### 2、翻转字符串
 
 思路一：反向遍历字符串
-```
+```javascript
 function reverseString(str){
   var tmp = '';
   for(var i=str.length-1; i>=0; i--)
@@ -87,7 +87,7 @@ function reverseString(str){
 }
 ```
 思路二：转化成array操作
-```
+```javascript
 function reverseString(str){
   var arr = str.split("");
   var i = 0,j = arr.length-1;
@@ -102,7 +102,7 @@ function reverseString(str){
 }
 ```
 ####3、生成指定长度随机字符串
-```
+```javascript
 function randomString(n){
   var str = 'abcdefghijklmnopqrstuvwxyz0123456789';
   var tmp = '';
@@ -113,7 +113,7 @@ function randomString(n){
 }
 ```
 ####4、统计字符串中次数最多字母
-```
+```javascript
 function findMaxDuplicateChar(str) {
   if(str.length == 1) {
     return str;
@@ -137,9 +137,9 @@ function findMaxDuplicateChar(str) {
   return maxChar + '：' + maxValue;
 }
 ```
-#数组操作
-####1、数组去重
-```
+# 数组操作
+#### 1、数组去重
+```javascript
 function unique(arr){
   var obj = {}
   var result = []
@@ -152,8 +152,8 @@ function unique(arr){
   return result;
 }
 ```
-####2、数组中最大差值
-```
+#### 2、数组中最大差值
+```javascript
 function getMaxProfit(arr){
   var min = arr[0],
       max = arr[0];
@@ -164,8 +164,8 @@ function getMaxProfit(arr){
   return max - min;
 }
 ```
-####3、无形参数组排序
-```
+#### 3、无形参数组排序
+```javascript
 function mySort() {
       var tags;
       tags = Array.prototype.slice.call(arguments);
@@ -182,11 +182,11 @@ function mySort() {
             return tags;
  }
 ```
-#其他常见算法
-####1、阶乘
+# 其他常见算法
+#### 1、阶乘
 
 非递归实现
-```
+```javascript
 function factorialize(num) {
   var result = 1;
     if(num < 0) return -1;
@@ -198,7 +198,7 @@ function factorialize(num) {
 }
 ```
 递归实现
-```
+```javascript
 function factorialize(num) {
   var result = 1;
   if(num < 0) return -1;
@@ -206,10 +206,10 @@ function factorialize(num) {
   if(num > 1) return num*factorialize(num-1);
 }
 ```
-####2、生成菲波那切数列
+#### 2、生成菲波那切数列
 
 强行递归实现
-```
+```javascript
 function getfib(n){
   if(n == 0) return 0;
   if(n == 1) return 1;
@@ -224,7 +224,7 @@ function fibo(len){
 }
 ```
 简约非递归实现
-```
+```javascript
 function getFibonacci(n) {
   var fibarr = [];
   var i = 0;
@@ -239,10 +239,10 @@ function getFibonacci(n) {
   return fibarr;
 }
 ```
-####3、二分查找
+#### 3、二分查找
 
 非递归实现
-```
+```javascript
 function binary_search(arr, key) {
   var low = 0,
       high = arr.length - 1;
@@ -260,7 +260,7 @@ function binary_search(arr, key) {
 }
 ```
 递归实现
-```
+```javascript
 function binary_search2(arr, low, high, key) {
   if(low > high) return -1;
   var mid = parseInt((low + high)/2);
