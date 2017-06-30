@@ -1,8 +1,8 @@
-##margin 塌陷问题
+## margin 塌陷问题
 >在标准文档流中，块级标签之间竖直方向的margin会以大的为准，这就是margin的塌陷现象。
 
-###1、  两个盒子嵌套关系
-````
+### 1、  两个盒子嵌套关系
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,20 +32,20 @@
 </div>
 </body>
 </html>
-````
+```
 
 ![运行结果](http://upload-images.jianshu.io/upload_images/3229842-3c737500386feb62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 >子盒子和父盒子之间没有出现10px的间距，而是父盒子与子盒子一起与页面顶端产生了10px间隙。
-####解决方法：
+#### 解决方法：
 方法一：为box1（即父盒子）添加边框
-````
+```css
 border: 1px solid #ffffff;
-````
+```
 方法二：为box1（即父盒子）添加overflow属性
-````
+```css
 overflow: hidden;
-````
+```
 方法一会产生 1px的边框的距离，方法二不会有影响。
 
 
@@ -53,7 +53,7 @@ overflow: hidden;
 ![解决后的效果图](http://upload-images.jianshu.io/upload_images/3229842-b44a6b231711076f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ###2、  两个盒子垂直并列
-````
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,7 +83,7 @@ overflow: hidden;
 <div class="box2"></div>
 </body>
 </html>
-````
+```
 
 
 ![运行结果](http://upload-images.jianshu.io/upload_images/3229842-846efbbba7413672.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
