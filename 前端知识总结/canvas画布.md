@@ -58,7 +58,8 @@ var canvas = document.getElementById('canvas');
 ````
 
 ![效果图](http://upload-images.jianshu.io/upload_images/3229842-f1fa772173f8b969.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-另外，可以填加 lineWidth 设置线段宽度，fill(),进行填充，默认填充色为黑色。当存在fill()时，代码种无 ctx.closePath()也可以进行填充。
+
+<br>另外，可以填加 lineWidth 设置线段宽度，fill(),进行填充，默认填充色为黑色。当存在fill()时，代码种无 ctx.closePath()也可以进行填充。
 ````
    //js代码
     var canvas = document.getElementById('canvas');
