@@ -26,7 +26,7 @@ WebM = 带有 VP8 视频编码和 Vorbis 音频编码的 WebM 文件
     <source src="vid.mp4" />
 </video>
 ```
-####添加play，end 按钮。
+#### 添加play，end 按钮。
 ```html
 <input type="button" name="name" value="Play" id="BtnPlay" />
 <input type="button" name="name" value="End" id="btnEnd" />
@@ -45,7 +45,7 @@ function PlayOrPause() {
         }
     }
 ```
-####设置当视频播放完成之后停止播放：
+#### 设置当视频播放完成之后停止播放：
 ```javascript
 function End() {
         var v = document.getElementById('vid');
@@ -57,7 +57,7 @@ function End() {
 
 ![video.png](http://upload-images.jianshu.io/upload_images/3229842-616dc15345bd265c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-##Audio 元素
+## Audio 元素
 
 HTML5使得在页面中加载音频元素变得非常简单。
 ```html
