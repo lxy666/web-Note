@@ -84,9 +84,6 @@ text.html代码
 co-views 是用来渲染模板的库，而 render 是它生成的实例
 
 >function *() {}和yield是啥？
-<br>
+***
 这个其实是 Koa 的精髓所在，首先app.use(...)和controller.get(path, ...)传入的参数都是一种写得很像函数的东西，但不同之处是函数的写法是function foo() {...}，而这里的写法多了一个星号，即function *foo() {}。这种写法其实就是 ES6 里的 generator。而yield正是配合这个写法的一种语法。
 
-***
-     因为是新学习的知识，了解不多，目前先总结这么多，后续再总结。
-***
