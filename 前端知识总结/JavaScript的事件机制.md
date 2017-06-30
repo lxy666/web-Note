@@ -60,13 +60,13 @@ function hello(){
 ##### 2、IE标准
 语法：
 
-```
+```javascript
 element.attachEvent(event, function)
 ```
 * event：（必需）事件类型。需加“on“，例如：onclick。
 * function：（必需）指定要事件触发时执行的函数。
 
-```html
+```javascript
 <input type="button" value="click me" id="btn2">
 <script>
 document.getElementById("btn2").attachEvent("onclick",hello);
@@ -78,7 +78,7 @@ function hello(){
 #### 3、事件监听的优点
 3.1、常规的事件绑定只执行最后绑定的事件。
 
-```html
+```javascript
 <input type="button" value="click me" id="btn3">
 <script>
 var btn3 = document.getElementById("btn3");
@@ -92,7 +92,7 @@ btn3.onclick = function(){
 ```
 采用事件监听机制可以绑定多个事件。
 
-```html
+```javascript
 <input type="button" value="click me" id="btn4">
 <script>
 var btn4 = document.getElementById("btn4");
@@ -108,7 +108,7 @@ function hello2(){
 ```
 3.2、可以解除相应的绑定
 
-```html
+```javascript
 <input type="button" value="click me" id="btn5">
 <script>
 var btn5 = document.getElementById("btn5");
@@ -125,7 +125,7 @@ function hello2(){
 ```
 3.3、封装事件监听
 
-```html
+```html javascript
 <input type="button" value="click me" id="btn5">
 //绑定监听事件
 function addEventHandler(target,type,fn){
@@ -153,7 +153,7 @@ removeEventHandler(btn5,"click",hello1);//移除事件hello1
 
 >事件委托就是利用冒泡的原理，把事件加到父元素或祖先元素上，触发执行效果。
 
-```html
+```javascript
     <input type="button" value="click me" id="btn6">
     var btn6 = document.getElementById("btn6");
     document.onclick = function(event){
@@ -195,7 +195,7 @@ item3.onclick = function(){
 ```
 ###### 事件委托
 
-```
+```html
 <ul id="list">
  <li id="item1" >item1</li>
  <li id="item2" >item2</li>
