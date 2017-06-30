@@ -1,8 +1,8 @@
-#介绍
+# 介绍
 
 >koa是一个相对于express来说，体积更小，更富有表现力的Web框架。koa通过组合不同的generator来避免繁琐的回调函数调用。koa的核心库没有绑定任何的中间件，仅仅提供了一个轻量优雅的函数库，使得编写Web应用变得得心应手。Koa基本上就是一个只有骨架的框架，你可以选择（或者自己写一个）中间件，而不用妥协于Express它们自带的中间件。
 
-###下面是一段hello world代码 
+### 下面是一段hello world代码 
 
 ````
 var koa = require('koa');
@@ -34,7 +34,7 @@ this.body 用于控制输出到页面的内容。
 
 
 ![演示.png](http://upload-images.jianshu.io/upload_images/3229842-d42136a75ab9c54f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-###官网依赖模块包括:
+### 官网依赖模块包括:
 
 >“koa”: ,koa核心模块 
 “koa-route”: 路由模块 
@@ -49,7 +49,7 @@ this.body 用于控制输出到页面的内容。
 “xss”:方式xss 攻击 
 “mongoose”:mongo链接库
 
-####例子：
+#### 例子：
 ````
 app.js代码
 
@@ -82,6 +82,7 @@ text.html代码
 ![结果显示.png](http://upload-images.jianshu.io/upload_images/3229842-17dad69ebc34964f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ><%=title%> 是对title进行html转义
 co-views 是用来渲染模板的库，而 render 是它生成的实例
+
 >function *() {}和yield是啥？
 这个其实是 Koa 的精髓所在，首先app.use(...)和controller.get(path, ...)传入的参数都是一种写得很像函数的东西，但不同之处是函数的写法是function foo() {...}，而这里的写法多了一个星号，即function *foo() {}。这种写法其实就是 ES6 里的 generator。而yield正是配合这个写法的一种语法。
 
