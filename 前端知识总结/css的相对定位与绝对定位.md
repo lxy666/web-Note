@@ -2,7 +2,7 @@
 >对一个元素进行相对定位，它将出现在它所在的位置，然后通过水平或垂直方向的设置，它会相对于它原来的位置进行移动。
 
 #### 例如：
-````
+````html
 
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +41,7 @@
 ![移动前的位置.png](http://upload-images.jianshu.io/upload_images/3229842-0ebf17d25bcd6a24.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #### 相对定位下box2的位置
-````
+````html
 
 #box2{
             display: inline-block;
@@ -62,7 +62,7 @@
 >css的相对定位，是使元素脱离文档流，不再占据位置，绝对定位的元素的位置相对于最近的已定位祖先元素，如果元素没有已定位的祖先元素，那么它的位置相对于最初的包含块。
 
 #### 对box2进行相对定位 
-````
+````html
 
 #box2{
             display: inline-block;
