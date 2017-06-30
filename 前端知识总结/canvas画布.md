@@ -1,7 +1,6 @@
 ><canvas>是html5新增的画布元素，为了客户端矢量图形而设计的，它自己没有行为(仅仅是一个画图的容器)，但是定义了一个 API 支持脚本化客户端绘图操作。canvas默认的宽为300px，高为150px，你可以直接在该对象上指定宽度和高度，但是，其大多数功能都可以通过 CanvasRenderingContext2D 对象获得。 这是通过 Canvas 对象的 getContext() 方法并且把直接量字符串 "2d" 作为唯一的参数传递给它而获得的。
 
-````javascript
-<!--html代码-->
+````html
 //添加canvas标签
 <canvas width=500 height=500></canvas>
 <script>
@@ -213,7 +212,7 @@ addColorStop()方法指定颜色停止，参数使用坐标来描述，可以是
 ![效果图](http://upload-images.jianshu.io/upload_images/3229842-c0e401433e2225da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ````javascript
-  var canvas = document.getElementById('canvas');
+    var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     var gradient_font = ctx.createLinearGradient(0, 0, canvas.width, 0);
     gradient_font.addColorStop(0,'blue');
