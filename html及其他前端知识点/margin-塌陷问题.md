@@ -52,7 +52,7 @@ overflow: hidden;
 
 ![解决后的效果图](http://upload-images.jianshu.io/upload_images/3229842-b44a6b231711076f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-###2、  两个盒子垂直并列
+### 2、  两个盒子垂直并列
 ```html
 <!DOCTYPE html>
 <html lang="en">
