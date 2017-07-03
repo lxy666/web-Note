@@ -63,6 +63,7 @@ Web Note 记录了有关前端的知识，包括 html 相关、CSS 相关、 Jav
 ## vue
 * [vuejs开发环境搭建](https://github.com/lxy666/web-Note/blob/master/vue/vuejs开发环境搭建.md)
 * [vue-js基础知识](https://github.com/lxy666/web-Note/blob/master/vue/vue-js基础知识.md)
+* [Vue-js-2-0](https://github.com/lxy666/web-Note/blob/master/vue/Vue-js-2-0.md)
 
 ## mac相关
 * [mac下服务器文件怎么和本地相互传输](https://github.com/lxy666/web-Note/blob/master/mac相关/mac下服务器文件怎么和本地相互传输.md)
