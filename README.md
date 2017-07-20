@@ -69,7 +69,7 @@ Web Note 记录了有关前端的知识，包括 html 相关、CSS 相关、 Jav
 
 ## mac相关
 * [mac下服务器文件怎么和本地相互传输](https://github.com/lxy666/web-Note/blob/master/mac相关/mac下服务器文件怎么和本地相互传输.md)
-
+* [](https://github.com/lxy666/web-Note/blob/master/mac%E7%9B%B8%E5%85%B3/Mac%20OS%20X%E4%B8%AD%E5%BC%80%E5%90%AF%E6%88%96%E5%85%B3%E9%97%AD%E6%98%BE%E7%A4%BA%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6%E5%91%BD%E4%BB%A4.md)
 ## exercise-problems
 * [判断2个数a,b的大小。不能用、if、switch、“？”或其他判断语句](https://github.com/lxy666/web-Note/blob/master/exercise-problems/判断2个数a%2Cb的大小%E3%80%82不能用、if、switch、“？”或其他判断语句.md)
 * [杭电ACM-1018-BigNumber](https://github.com/lxy666/web-Note/blob/master/exercise-problems/杭电ACM-1018-BigNumber.md)
