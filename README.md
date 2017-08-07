@@ -58,6 +58,7 @@ Web Note 记录了有关前端的知识，包括 html 相关、CSS 相关、 Jav
 * [从浏览器地址栏输入url到显示页面的步骤(以HTTP为例)](https://github.com/lxy666/web-Note/blob/master/网络/从浏览器地址栏输入url到显示页面的步骤(以HTTP为例).md)
 * [同源策略](https://github.com/lxy666/web-Note/blob/master/网络/同源策略.md)
 * [常见的web安全漏洞](https://github.com/lxy666/web-Note/blob/master/网络/常见的web安全漏洞.md)
+* [ssh原理与应用](https://github.com/lxy666/web-Note/blob/master/%E7%BD%91%E7%BB%9C/ssh%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8.md)
 
 ## node.js
 * [Koa入门](https://github.com/lxy666/web-Note/blob/master/node.js/Koa入门.md)
