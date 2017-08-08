@@ -58,7 +58,7 @@ Web Note 记录了有关前端的知识，包括 html 相关、CSS 相关、 Jav
 * [从浏览器地址栏输入url到显示页面的步骤(以HTTP为例)](https://github.com/lxy666/web-Note/blob/master/网络/从浏览器地址栏输入url到显示页面的步骤(以HTTP为例).md)
 * [同源策略](https://github.com/lxy666/web-Note/blob/master/网络/同源策略.md)
 * [常见的web安全漏洞](https://github.com/lxy666/web-Note/blob/master/网络/常见的web安全漏洞.md)
-* [ssh原理与应用](https://github.com/lxy666/web-Note/blob/master/%E7%BD%91%E7%BB%9C/ssh%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8.md)
+* [ssh原理与应用](https://github.com/lxy666/web-Note/blob/master/网络/ssh原理与应用.md)
 
 ## node.js
 * [Koa入门](https://github.com/lxy666/web-Note/blob/master/node.js/Koa入门.md)
@@ -70,7 +70,7 @@ Web Note 记录了有关前端的知识，包括 html 相关、CSS 相关、 Jav
 
 ## mac相关
 * [Mac 下服务器文件怎么和本地相互传输](https://github.com/lxy666/web-Note/blob/master/mac相关/mac下服务器文件怎么和本地相互传输.md)
-* [Mac 中开启或关闭显示隐藏文件命令](https://github.com/lxy666/web-Note/blob/master/mac%E7%9B%B8%E5%85%B3/Mac%20OS%20X%E4%B8%AD%E5%BC%80%E5%90%AF%E6%88%96%E5%85%B3%E9%97%AD%E6%98%BE%E7%A4%BA%E9%9A%90%E8%97%8F%E6%96%87%E4%BB%B6%E5%91%BD%E4%BB%A4.md)
+* [Mac 中开启或关闭显示隐藏文件命令](https://github.com/lxy666/web-Note/blob/master/mac相关/Mac中开启或关闭显示隐藏文件命令.md)
 ## exercise-problems
 * [判断2个数a,b的大小。不能用、if、switch、“？”或其他判断语句](https://github.com/lxy666/web-Note/blob/master/exercise-problems/判断2个数a%2Cb的大小%E3%80%82不能用、if、switch、“？”或其他判断语句.md)
 * [杭电ACM-1018-BigNumber](https://github.com/lxy666/web-Note/blob/master/exercise-problems/杭电ACM-1018-BigNumber.md)
