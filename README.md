@@ -60,6 +60,10 @@ Web Note 记录了有关前端的知识，包括 html 相关、CSS 相关、 Jav
 * [常见的web安全漏洞](https://github.com/lxy666/web-Note/blob/master/网络/常见的web安全漏洞.md)
 * [ssh原理与应用](https://github.com/lxy666/web-Note/blob/master/网络/ssh原理与应用.md)
 
+## git 
+* [配置全局的 git 忽略列表](https://github.com/lxy666/web-Note/blob/master/git/配置全局的%20git%20忽略列表.md)
+* [多个GitHub账号配置ssh key](https://github.com/lxy666/web-Note/blob/master/git/多个GitHub账号配置ssh%20key.md)
+
 ## node.js
 * [Koa入门](https://github.com/lxy666/web-Note/blob/master/node.js/Koa入门.md)
 
