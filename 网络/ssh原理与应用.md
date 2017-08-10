@@ -146,6 +146,14 @@ IdentityFile ~/.ssh/zhangsan.pem //认证所需的密钥
 这样我们便可以通过``ssh js``来代替曾经的``ssh xxx@111.11.11.11``
 并且采用公钥+私钥的加密方式，不用输入密码，非常的方便。
 
+## ssh应用 
+
+1. 使用 ssh 执行命令
+   ssh root@host -p 端口号 命令
+2. 配置多个 github 账号  
+
+[链接](http://www.jianshu.com/p/477444ada71e)
+
 
 ## 参考文献
 
