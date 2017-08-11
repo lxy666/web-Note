@@ -78,6 +78,7 @@ Web Note 记录了有关前端的知识，包括 html 相关、CSS 相关、 Jav
 ## exercise-problems
 * [判断2个数a,b的大小。不能用、if、switch、“？”或其他判断语句](https://github.com/lxy666/web-Note/blob/master/exercise-problems/判断2个数a%2Cb的大小%E3%80%82不能用、if、switch、“？”或其他判断语句.md)
 * [杭电ACM-1018-BigNumber](https://github.com/lxy666/web-Note/blob/master/exercise-problems/杭电ACM-1018-BigNumber.md)
+* [比较版本号](https://github.com/lxy666/web-Note/blob/master/exercise-problems/比较版本号.md)
 
 ## 数据库
 * [MongoDB使用-及-MAC系统MongoDB的安装](https://github.com/lxy666/web-Note/blob/master/数据库/MongoDB使用-及-MAC系统MongoDB的安装.md)
