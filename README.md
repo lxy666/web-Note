@@ -39,7 +39,7 @@ Web Note 记录了有关前端的知识，包括 html 相关、CSS 相关、 Jav
 * [关于javascript获取内联样式与嵌入式样式](https://github.com/lxy666/web-Note/blob/master/javascript相关/关于javascript获取内联样式与嵌入式样式.md)
 * [常见算法的js实现](https://github.com/lxy666/web-Note/blob/master/javascript相关/常见算法的js实现.md)
 * [回调函数](https://github.com/lxy666/web-Note/blob/master/javascript相关/回调函数.md)
-* []()
+* [let变量和const变量](https://github.com/lxy666/web-Note/blob/master/javascript相关/let变量和const变量.md)
 * [Promise 对象实现的 Ajax 操作](https://github.com/lxy666/web-Note/blob/master/javascript%E7%9B%B8%E5%85%B3/Promise%20%E5%AF%B9%E8%B1%A1%E5%AE%9E%E7%8E%B0%E7%9A%84%20Ajax%20%E6%93%8D%E4%BD%9C.md)
 
 ## 设计模式
