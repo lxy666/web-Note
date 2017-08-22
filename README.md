@@ -27,7 +27,7 @@ Web Note 记录了有关前端的知识，包括 html 相关、CSS 相关、 Jav
 * [六种实现垂直居中的方法](https://github.com/lxy666/web-Note/blob/master/css相关/六种实现垂直居中的方法.md)
 * [利用vertical-align-middle垂直居中](https://github.com/lxy666/web-Note/blob/master/css相关/利用vertical-align-middle垂直居中.md)
 * [子容器浮动后，父容器的扩展问题](https://github.com/lxy666/web-Note/blob/master/css相关/子容器浮动后，父容器的扩展问题.md)
-* [css 选择器](https://github.com/lxy666/web-Note/blob/master/css%E7%9B%B8%E5%85%B3/css 选择器.md)
+* [css 选择器](https://github.com/lxy666/web-Note/blob/master/css%E7%9B%B8%E5%85%B3/css%20选择器.md)
 
 ## JavaScript相关
 * [JS原型与原型链](https://github.com/lxy666/web-Note/blob/master/javascript相关/JS原型与原型链.md)
