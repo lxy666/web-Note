@@ -61,6 +61,7 @@ Web Note 记录了有关前端的知识，包括 html 相关、CSS 相关、 Jav
 * [同源策略](https://github.com/lxy666/web-Note/blob/master/网络/同源策略.md)
 * [常见的web安全漏洞](https://github.com/lxy666/web-Note/blob/master/网络/常见的web安全漏洞.md)
 * [ssh原理与应用](https://github.com/lxy666/web-Note/blob/master/网络/ssh原理与应用.md)
+* [Python SimpleHTTPServer的轻量级服务器](https://github.com/lxy666/web-Note/blob/master/%E7%BD%91%E7%BB%9C/Python%20SimpleHTTPServer的轻量级服务器.md)
 
 ## git 
 * [配置全局的 git 忽略列表](https://github.com/lxy666/web-Note/blob/master/git/配置全局的%20git%20忽略列表.md)
