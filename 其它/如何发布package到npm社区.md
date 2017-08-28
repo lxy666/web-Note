@@ -60,16 +60,16 @@ Is this ok? (yes)
 输入完成之后，系统会要你确认文件的内容是否有误，如果没有问题直接输入yes或者按enter，这样package.json就创建好了。
 
 ### Package.json 属性说明
-name - 包名。
-version - 包的版本号。
-description - 包的描述。
-homepage - 包的官网 url 。
-author - 包的作者姓名。
-contributors - 包的其他贡献者姓名。
-dependencies - 依赖包列表。如果依赖包没有安装，npm 会自动将依赖包安装在 node_module 目录下。
-repository - 包代码存放的地方的类型，可以是 git 或 svn，git 可在 Github 上。
-main - main 字段指定了程序的主入口文件，require('moduleName') 就会加载这个文件。这个字段的默认值是模块根目录下面的 index.js。
-keywords - 关键字
+<br>name - 包名。
+<br>version - 包的版本号。
+<br>description - 包的描述。
+<br>homepage - 包的官网 url 。
+<br>author - 包的作者姓名。
+<br>contributors - 包的其他贡献者姓名。
+<br>dependencies - 依赖包列表。如果依赖包没有安装，npm 会自动将依赖包安装在 node_module 目录下。
+<br>repository - 包代码存放的地方的类型，可以是 git 或 svn，git 可在 Github 上。
+<br>main - main 字段指定了程序的主入口文件，require('moduleName') 就会加载这个文件。这个字段的默认值是模块根目录下面的 index.js。
+<br>keywords - 关键字
 
 ### 发布
 * 首先要注册一个[npm账号](https://www.npmjs.com/signup)
@@ -101,8 +101,8 @@ test();
 * 更新包的话，修改代码后不能直接发布，这里我们需要修改``package``的``version``号，修改之前先说下``npm``维护``package``版本的规则``x.y.z``
 
   >x: 主版本号,通常有重大改变或者达到里程碑才改变;
-   y: 次要版本号,或二级版本号,在保证主体功能基本不变的情况下,如果适当增加了新功能可以更新此版本号;
-   z: 尾版本号或者补丁号,一些小范围的修修补补就可以更新补丁号.
+  <br>y: 次要版本号,或二级版本号,在保证主体功能基本不变的情况下,如果适当增加了新功能可以更新此版本号;
+  <br>z: 尾版本号或者补丁号,一些小范围的修修补补就可以更新补丁号.
 
   ```
    $ npm version patch <=> z++
