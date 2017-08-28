@@ -6,8 +6,8 @@ Web Note 记录了有关前端的知识，包括 html 相关、CSS 相关、 Jav
 
 ## html及其他前端知识点
 
-* [canvas画布](https://github.com/lxy666/web-Note/blob/master/html%E5%8F%8A%E5%85%B6%E4%BB%96%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%82%B9/canvas%E7%94%BB%E5%B8%83.md)
-* [flex布局](https://github.com/lxy666/web-Note/blob/master/html%E5%8F%8A%E5%85%B6%E4%BB%96%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%82%B9/flex%E5%B8%83%E5%B1%80.md)
+* [canvas画布](https://github.com/lxy666/web-Note/blob/master/html%E5%8F%8A%E5%85%B6%E4%BB%96%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%82%B9/canvas画布.md)
+* [flex布局](https://github.com/lxy666/web-Note/blob/master/html%E5%8F%8A%E5%85%B6%E4%BB%96%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%82%B9/flex布局.md)
 * [html5实现拖拽效果](https://github.com/lxy666/web-Note/blob/master/html%E5%8F%8A%E5%85%B6%E4%BB%96%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%82%B9/html5%E5%AE%9E%E7%8E%B0%E6%8B%96%E6%8B%BD%E6%95%88%E6%9E%9C.md)
 * [margin塌陷问题](https://github.com/lxy666/web-Note/blob/master/html及其他前端知识点/margin-塌陷问题.md)
 * [video元素与audio元素](https://github.com/lxy666/web-Note/blob/master/html及其他前端知识点/video元素与audio元素.md)
@@ -61,6 +61,7 @@ Web Note 记录了有关前端的知识，包括 html 相关、CSS 相关、 Jav
 * [同源策略](https://github.com/lxy666/web-Note/blob/master/网络/同源策略.md)
 * [常见的web安全漏洞](https://github.com/lxy666/web-Note/blob/master/网络/常见的web安全漏洞.md)
 * [ssh原理与应用](https://github.com/lxy666/web-Note/blob/master/网络/ssh原理与应用.md)
+* [Python SimpleHTTPServer的轻量级服务器](https://github.com/lxy666/web-Note/blob/master/%E7%BD%91%E7%BB%9C/Python%20SimpleHTTPServer的轻量级服务器.md)
 
 ## git 
 * [配置全局的 git 忽略列表](https://github.com/lxy666/web-Note/blob/master/git/配置全局的%20git%20忽略列表.md)
@@ -72,7 +73,7 @@ Web Note 记录了有关前端的知识，包括 html 相关、CSS 相关、 Jav
 ## vue
 * [vuejs开发环境搭建](https://github.com/lxy666/web-Note/blob/master/vue/vuejs开发环境搭建.md)
 * [vue-js基础知识](https://github.com/lxy666/web-Note/blob/master/vue/vue-js基础知识.md)
-* [Vue-js-2-0](https://github.com/lxy666/web-Note/blob/master/vue/Vue-js-2-0.md)
+* [Vue-js-2.0](https://github.com/lxy666/web-Note/blob/master/vue/Vue-js-2-0.md)
 
 ## mac相关
 * [Mac 下服务器文件怎么和本地相互传输](https://github.com/lxy666/web-Note/blob/master/mac相关/mac下服务器文件怎么和本地相互传输.md)
