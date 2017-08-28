@@ -86,4 +86,7 @@ Web Note 记录了有关前端的知识，包括 html 相关、CSS 相关、 Jav
 ## 数据库
 * [MongoDB使用-及-MAC系统MongoDB的安装](https://github.com/lxy666/web-Note/blob/master/数据库/MongoDB使用-及-MAC系统MongoDB的安装.md)
 
+## 其他
+* [如何发布package到npm社区](https://github.com/lxy666/web-Note/blob/master/如何发布package到npm社区.md)
+
 
