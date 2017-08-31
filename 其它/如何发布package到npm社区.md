@@ -12,10 +12,10 @@
 * index.js:
 
 ```javascript
-function iam-sun-iam-moon() {
+function iam_sun_iam_moon() {
   console.log("There is the iam-sun-iam-moon.");//主要代码
 }
-module.exports = iam-sun-iam-moon;
+module.exports = iam_sun_iam_moon;
 ```
 
 * package.json:
