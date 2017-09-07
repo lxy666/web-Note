@@ -43,6 +43,14 @@
 ### 自动完成
 iTerm2 可以自动补齐命令，输入若干字符，按⌘+;弹出自动补齐窗口，列出曾经使用过的命令。
 
+
+### 设置终端历史行数
+ITERM默认设置了终端能保留的历史输出行数，在进行调试时特别不方便，一旦输出过多就无法看到完整的历史记录。
+在``Preference=>Profiles=>Terminal``内将``Scrollback Lines``右侧的``Unlimited scrollback``勾选上即可保留所有的历史输出。
+
+![](https://ws1.sinaimg.cn/large/006tNc79ly1fjatqm033gj31g20vkajf.jpg)
+
+
 ### iTerm2 autocomplete
 iTerm2 也可以使用历史记录，按⌘+Shift+h弹出历史粘贴记录窗口，并且，还显示出了这些条目被复制的时间，⌘+Shift+;弹出历史命令记录窗口。
 
