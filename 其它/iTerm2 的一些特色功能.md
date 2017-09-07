@@ -14,6 +14,13 @@
 5. 点击文件夹：在 finder 中打开该文件夹；
 6. 同时按住option键，可以以矩形选中，类似于vim中的ctrl v操作。
 
+
+### control 的使用
+1. control + a 光标切换到本行开头
+2. control + e 光标切换到本行结尾
+3. control + w 删除一个单词
+4. control + u 删除一行
+
 ### 常用快捷键
 * cmd + n：新建窗口
 * cmd + w：关闭窗口
