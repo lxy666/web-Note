@@ -88,5 +88,7 @@ Web Note 记录了有关前端的知识，包括 html 相关、CSS 相关、 Jav
 
 ## 其他
 * [如何发布package到npm社区](https://github.com/lxy666/web-Note/blob/master/其它/如何发布package到npm社区.md)
-
+* [http图片在https站中的显示问题](https://github.com/lxy666/web-Note/blob/master/其它/http图片在https站中的显示问题.md)
+* [iTerm2的一些特色功能](https://github.com/lxy666/web-Note/blob/master/其它/iTerm2的一些特色功能.md)
+* [百度地图 API 定位问题](https://github.com/lxy666/web-Note/blob/master/其它/百度地图%20API%20定位问题.md)
 
