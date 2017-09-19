@@ -86,9 +86,14 @@ Web Note 记录了有关前端的知识，包括 html 相关、CSS 相关、 Jav
 ## 数据库
 * [MongoDB使用-及-MAC系统MongoDB的安装](https://github.com/lxy666/web-Note/blob/master/数据库/MongoDB使用-及-MAC系统MongoDB的安装.md)
 
+## react 
+* [react 复制到剪切板](https://github.com/lxy666/web-Note/blob/master/react/react%20复制到剪切板.md)
+* [父组件与子组件之间的值传递](https://github.com/lxy666/web-Note/blob/master/react/父组件与子组件之间的值传递.md)
+
 ## 其他
 * [如何发布package到npm社区](https://github.com/lxy666/web-Note/blob/master/其它/如何发布package到npm社区.md)
 * [http图片在https站中的显示问题](https://github.com/lxy666/web-Note/blob/master/其它/http图片在https站中的显示问题.md)
 * [iTerm2的一些特色功能](https://github.com/lxy666/web-Note/blob/master/其它/iTerm2%20的一些特色功能.md)
 * [百度地图 API 定位问题](https://github.com/lxy666/web-Note/blob/master/其它/百度地图%20API%20定位问题.md)
+
 
