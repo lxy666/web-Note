@@ -609,6 +609,7 @@ export default class Com extends wepy.component {
 ### $broadcast
 
 ``$broadcast`` 事件是由父组件发起，所有子组件都会收到此广播事件，除非事件被手动取消。事件广播的顺序为广度优先搜索顺序，如上图，如果``Page_Index``发起一个``$broadcast``事件，那么接收到事件的先后顺序为：A, B, C, D, E, F, G, H。如下图：
+<br>
 ![](http://upload-images.jianshu.io/upload_images/3229842-67f0fb851e36b501.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### $emit
