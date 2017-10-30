@@ -129,6 +129,7 @@ export default class Index extends wepy.page {
 #### 3. 支持加载外部npm包
 
 在编译过程当中，会递归遍历代码中的require然后将对应依赖文件从node_modules当中拷贝出来，并且修改require为相对路径，从而实现对外部NPM包的支持。如下图：
+<br>
 ![](http://upload-images.jianshu.io/upload_images/3229842-a8e925f5a76a28d5.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 #### 4. 单文件模式，使得目录结构更加清晰
 
