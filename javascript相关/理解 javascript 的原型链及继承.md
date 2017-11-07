@@ -62,6 +62,15 @@ Object.create = function(p) {
     return new f();
 }
 ```
+
+#### Object 对象的属性
+
+| 属性 | 描述 |
+| --- | --- |
+| [constructor](https://www.denpe.com/jsbook/javascript-object-constructor.html "constructor") | 返回创建该对象的构造函数。 |
+| [prototype](https://www.denpe.com/jsbook/javascript-object-prototype.html "js-prototype") | 返回创建该对象的函数的原型对象。 |
+
+
 ### 一、原型
 
 ##  ``__proto__``（隐式原型）
