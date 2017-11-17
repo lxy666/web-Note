@@ -1,4 +1,4 @@
-## [小程序框架wepy文档](https://wepyjs.github.io/wepy/#/?id=%e5%b0%8f%e7%a8%8b%e5%ba%8f%e6%a1%86%e6%9e%b6wepy%e6%96%87%e6%a1%a3)
+## [小程序框架wepy文档链接](https://wepyjs.github.io/wepy/#/?id=%e5%b0%8f%e7%a8%8b%e5%ba%8f%e6%a1%86%e6%9e%b6wepy%e6%96%87%e6%a1%a3)
 ### 项目创建与使用
 以下安装都通过npm安装
 
