@@ -1,0 +1,15 @@
+# 安装archey，并打开终端自启动
+
+每次打开终端自动显示彩色小苹果配置信息效果图：
+![img](https://ws3.sinaimg.cn/large/006tKfTcly1flpqiomlrjj30j00e0dh8.jpg）
+
+1. [首先安装HomeBrew](https://brew.sh/index_zh-cn.html)
+2. 安装成功后执行
+
+  ``brew install archey``
+3. 编辑 ~/.zshrc 文件
+4. 在最后一行插入命令 
+
+  ``archey``  
+5. 重启终端
+6. 如果你的终端不是ZSH,编辑对应的文件
