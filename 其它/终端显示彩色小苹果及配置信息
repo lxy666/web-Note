@@ -1,8 +1,8 @@
 # 安装archey，并打开终端自启动
 
 每次打开终端自动显示彩色小苹果配置信息效果图：
-![img](https://ws3.sinaimg.cn/large/006tKfTcly1flpqiomlrjj30j00e0dh8.jpg）
 
+![屏幕快照 2017-11-21 下午3.17.49](https://ws3.sinaimg.cn/large/006tKfTcly1flpqiomlrjj30j00e0dh8.jpg)
 1. [首先安装HomeBrew](https://brew.sh/index_zh-cn.html)
 2. 安装成功后执行
 
