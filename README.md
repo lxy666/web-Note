@@ -91,8 +91,8 @@ Web Note 记录了有关前端的知识，包括 html 相关、CSS 相关、 Jav
 * [父组件与子组件之间的值传递](https://github.com/lxy666/web-Note/blob/master/react/父组件与子组件之间的值传递.md)
 
 ## 微信小程序
-* [小程序 solt 使用](https://github.com/lxy666/web-Note/blob/master/小程序%20solt%20使用.md)
-* [小程序框架wepy学习总结](https://github.com/lxy666/web-Note/blob/master/小程序框架wepy学习总结.md)
+* [小程序 solt 使用](https://github.com/lxy666/web-Note/blob/master/小程序/小程序%20solt%20使用.md)
+* [小程序框架wepy学习总结](https://github.com/lxy666/web-Note/blob/master/小程序/小程序框架wepy学习总结.md)
 
 ## 其他
 * [如何发布package到npm社区](https://github.com/lxy666/web-Note/blob/master/其它/如何发布package到npm社区.md)
