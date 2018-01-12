@@ -27,7 +27,7 @@ wepy build --watch
 ![](http://upload-images.jianshu.io/upload_images/3229842-15a7a8b1214cca84.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 开发使用说明
-1. 使用微信开发者工具新建项目，本地开发选择dist目录。
+1. 使用微信开发者工具新建项目，本地开发选择``dist``目录。
 2. 微信开发者工具-->项目-->关闭ES6转ES5。**重要：漏掉此项会运行报错。**
 3. 微信开发者工具-->项目-->关闭上传代码时样式自动补全 **重要：某些情况下漏掉此项会也会运行报错。**
 4. 微信开发者工具-->项目-->关闭代码压缩上传 **重要：开启后，会导致真机computed, props.sync 等等属性失效。**
