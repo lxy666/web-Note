@@ -209,9 +209,12 @@ async onLoad() {
 ![](http://upload-images.jianshu.io/upload_images/3229842-0018e73b15c5d811.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 一个.wpy文件分为三部分
-1. 样式``<style></style>``对应原有``wxss``
-2. 模板``<template></template>``对应原有``wxml``
-3. 代码``<script></script>``对应原有``js``
+1. 样式``<style></style>``对应原有``wxss``文件
+2. 模板``<template></template>``对应原有``wxml``文件
+3. 代码``<script></script>``对应原有``js``文件，分为两部分：1)逻辑部分，除了config对象之外的部分，对应于原生的.js文件;2）配置部分，即config对象，对应于原生的.json文件。
+
+
+
 
 其中入口文件``app.wpy``不需要``template``,所以编译时会被忽略。这三个标签都支持``lang``和``src``属性，``lang``决定其代码编译过程，``src``决定是否外联代码，存在``src``属性且有效时，忽略内敛代码，示例如下：
 
@@ -296,12 +299,12 @@ export default class Index extends wepy.page {
 
 |属性	|说明|
 |---|---|
-|config	|页面config，相当于原来的index.json，同app.wpy中的config|
-|components	|页面引入的组件列表|
-|data|	页面需要渲染的数据|
-|methods|	wmxl的事件捕捉，如bindtap，bindchange|
-|events	|组件之间通过broadcast，emit传递的事件|
-|其它	|如onLoad，onReady等小程序事件以及其它自定义方法与属性|
+|config	|页面配置对象，对应于原生的page.json文件，类似于app.wpy中的`config`|
+|components	|页面组件列表对象，声明页面所引入的组件列表|
+|data|	页面渲染数据对象，存放可用于页面模板绑定的渲染数据|
+|methods|	wmxl的事件捕捉，如`bindtap`，`bindchange`|
+|events	|	WePY组件事件处理函数对象，存放响应组件之间通过`$broadcast`、`$emit`、`$invoke`所传递的事件的函数|
+|其它	|如`onLoad`，`onReady`等小程序事件以及其它自定义方法与属性|
 
 #### 3.组件 com.wpy
 
@@ -326,7 +329,7 @@ export default class Com extends wepy.component {
 }
 </script>
 ```
-页面入口继承自``wepy.component``，属性与页面属性一样，除了不需要``config``以及页面特有的一些小程序事件等等。
+页面入口继承自``wepy.component``，属性与页面属性大致相同，除了不需要``config``以及页面特有的一些小程序事件等等。
 
 ## 实例
 
@@ -347,7 +350,7 @@ export default class MyComponent extends wepy.component {
 ```
 ### App 实例
 
-App 实例中只包含小程序生命周期函数以及自定义方法与属性
+App小程序实例中主要包含小程序生命周期函数、config配置对象、globalData全局数据对象，以及其他自定义方法与属性。
 
 ```
 import wepy from 'wepy';
@@ -362,47 +365,47 @@ export default class MyAPP extends wepy.app {
     onShow () {}
 
     config = {}; // 对应 app.json 文件
+    
+    globalData = {}
 }
 ```
-在 Page 实例中，可以通过this.$parent来访问 App 实例。
+在 Page 实例中，可以通过`this.$parent`来访问 App 实例。
 
 ### Page 和 Component 实例
 
-Page 实例中只包含小程序页面生命周期函数，自定义方法与属性以及特有属性。
+由于`Page`页面实际上继承自`Component`组件，即`Page`也是组件。除扩展了页面所特有的`config`配置以及特有的页面生命周期函数之外，其它属性和方法与`Component`一致，因此这里以`Page`页面为例进行介绍。
 
 ```
 import wepy from 'wepy';
 
 // export default class MyPage extends wepy.page {
-export default class MyPage extends wepy.component {
-    customData = {};
+export default class MyComponent extends wepy.component {
+    customData = {}  // 自定义数据
 
-    customFunction ()　{}
+    customFunction ()　{}  //自定义方法
 
-    onLoad () {} // 只在 Page 实例中会存在页面生命周期函数
+    onLoad () {}  // 在Page和Component共用的生命周期函数
 
-    onShow () {} // 只在 Page 实例中会存在页面生命周期函数
+    onShow () {}  // 只在Page中存在的页面生命周期函数
 
-    // 特有属性示例
+    config = {};  // 只在Page实例中存在的配置数据，对应于原生的page.json文件
 
-    config = {}; // 对应page.json文件，只在 Page 实例中存在
+    data = {};  // 页面所需数据均需在这里声明，可用于模板数据绑定
 
-    data = {}; // 页面所需数据均需在这里声明
+    components = {};  // 声明页面中所引用的组件，或声明组件中所引用的子组件
 
-    components = {}; // 声明页面所引用的子组件
+    mixins = [];  // 声明页面所引用的Mixin实例
 
-    mixins = []; // 声明页面所引用的Mixin实例
+    computed = {};  // 声明计算属性（详见后文介绍）
 
-    computed = {}; // 声明[计算属性](https://wepyjs.github.io/wepy/#/?id=computed-%e8%ae%a1%e7%ae%97%e5%b1%9e%e6%80%a7)
+    watch = {};  // 声明数据watcher（详见后文介绍）
 
-    watch = {}; // 声明数据watcher
+    methods = {};  // 声明页面wxml中标签的事件处理函数。注意，此处只用于声明页面wxml中标签的bind、catch事件，自定义方法需以自定义方法的方式声明
 
-    methods = {}; // 声明页面响应事件。注意，此处只用于声明页面bind，catch事件，自定义方法需以自定义方法的方式声明
-
-    events = {}; // 声明组件之间的事件传递
+    events = {};  // 声明组件之间的事件处理函数
 }
 ```
-对于 methods 属性，因为与Vue的使用习惯不一致，一直存在一个误区，这里的 methods 属性只声明页面bind，catch事件，不能声明自定义方法。
+`methods `属性只声明页面`bind`，`catch`事件，不能声明自定义方法。
 
 ## 组件
 小程序支持js模块化，但彼此独立，业务代码与交互事件仍需在页面处理。无法实现组件化的松耦合与复用的效果。 
@@ -411,7 +414,7 @@ wepy让小程序支持组件化开发，组件的所有业务与功能在组件�
 
 ### 普通组件引用
 
-当页面或者组件需要引入子组件时，需要在页面或者 ``script``中的``components``给组件分配唯一id，并且在``template``中添加``<component>``标签。
+当页面或者组件需要引入子组件时，需要在页面或者 ``script``中的``components``给组件分配唯一ID，并且在``template``中添加``<component>``标签。
 
 ```
 <template>
@@ -455,7 +458,7 @@ WePY中的组件都是静态组件，是以组件ID作为唯一标识的，每�
 
 ### ``<repeat>``的使用(循环列表组件引用)
 
-当想在``wx:for``中使用组件时，需要使用辅助标签``<repeat>``
+当需要循环渲染`WePY`组件时(类似于通过`wx:for`循环渲染原生的`wxml`标签)，必须使用`WePY`定义的辅助标签`<repeat>`
 
 ```
 <template>
@@ -478,9 +481,12 @@ WePY中的组件都是静态组件，是以组件ID作为唯一标识的，每�
 ```
 ### ``computed`` 计算属性
 
-* 类型: { [key: string]: Function }
+* 类型: ``{ [key: string]: Function }``
 
-* 详细： 计算属性可以直接当作绑定数据，在每次脏检查周期中。在每次脏检查流程中，只要有脏数据，那么computed 属性就会重新计算。
+* 详细： 
+
+ 1. computed计算属性，是一个有返回值的函数，可直接被当作绑定数据来使用。因此类似于data属性，代码中可通过this.计算属性名来引用，模板中也可通过{{ 计算属性名 }}来绑定数据。
+ 2. 只要是组件中有任何数据发生了改变，那么所有计算属性就都会被重新计算。
 
 ```
   data = {
@@ -495,20 +501,27 @@ WePY中的组件都是静态组件，是以组件ID作为唯一标识的，每�
 ```
 ###``watcher`` 监听属性更新
 
-* 类型: { [key: string]: Function }
+* 类型: ``{ [key: string]: Function }``
 
-* 详细： 通过watcher我们能监听到任何数值属性的数值更新。
+* 详细： 
+
+ 1. 通过监听器watcher能够监听到任何属性的更新。监听器在watch对象中声明，类型为函数，函数名与需要被监听的data对象中的属性同名，每当被监听的属性改变一次，监听器函数就会被自动调用执行一次。
+
+ 2. 监听器适用于当属性改变时需要进行某些额外处理的情形。
 
 ```
   data = {
       num: 1
   };
-
+  // 监听器函数名必须跟需要被监听的data对象中的属性num同名，
+  // 其参数中的newValue为属性改变后的新值，oldValue为改变前的旧值
   watch = {
       num (newValue, oldValue) {
           console.log(`num value: ${oldValue} -> ${newValue}`)
       }
   }
+  
+  // 每当被监听的属性num改变一次，对应的同名监听器函数num()就被自动调用执行一次
 
   onLoad () {
       setInterval(() => {
@@ -542,7 +555,13 @@ onLoad () {
 
 #### 动态传值
 
-使用:prop（等价于v-bind:prop），代表动态传值，子组件会接收父组件的数据。
+动态传值是指父组件向子组件传递动态数据内容，父子组件数据完全独立互不干扰。但可以通过使用.sync修饰符来达到父组件数据绑定至子组件的效果，也可以通过设置子组件props的twoWay: true来达到子组件数据绑定至父组件的效果。那如果即使用.sync修饰符，同时子组件props中添加的twoWay: true时，就可以实现数据的双向绑定了。
+
+注意：下文示例中的twoWay为true时，表示子组件向父组件单向动态传值，而twoWay为false(默认值，可不写)时，则表示子组件不向父组件传值。这是与Vue不一致的地方，而这里之所以仍然使用twoWay，只是为了尽可能保持与Vue在标识符命名上的一致性。
+
+在父组件template模板部分所插入的子组件标签中，使用:prop属性（等价于Vue中的v-bind:prop属性）来进行动态传值。
+
+
 
 ```
 // parent.wpy
@@ -683,7 +702,13 @@ this.$invoke('./../ComB/ComG', 'someMethod', 'someArgs');
 ```
 
 ## 组件内容分发slot
-可以使用``<slot>``元素作为组件内容插槽，在使用组件时，可以随意进行组件内容分发，参看以下示例：
+WePY中的slot插槽作为内容分发标签的空间占位标签，便于在父组件中通过对相当于扩展板卡的内容分发标签的“插拔”，更为灵活、方便地对子组件进行内容分发。
+
+具体使用方法是，首先在子组件template模板部分中声明slot标签作为内容插槽，同时必须在其name属性中指定插槽名称，还可设置默认的标签内容；然后在引入了该带有插槽的子组件的父组件template模板部分中声明用于“插拔”的内容分发标签。
+
+注意，这些父组件中的内容分发标签必须具有slot属性，并且其值为子组件中对应的插槽名称，这样父组件内容分发标签中的内容会覆盖掉子组件对应插槽中的默认内容。
+
+另外，要特别注意的是，父组件中一旦声明了对应于子组件插槽的内容分发标签，即便没有内容，子组件插槽中的默认内容也不会显示出来，只有删除了父组件中对应的内容分发标签，才能显示出来。
 
 在Panel组件中有以下模板：
 
@@ -720,7 +745,8 @@ this.title = 'this is title';
 ```
 ``wepy``使用脏数据检查对``setData``进行封装，在函数运行周期结束时执行脏数据检查，一来可以不用关心页面多次``setData``是否会有性能上的问题，二来可以更加简洁去修改数据实现绑定，不用重复去写``setData``方法。
 
-但需注意，在函数运行周期之外的函数里去修改数据需要手动调用$apply方法。如：
+但需注意，在函数运行周期之外的函数里去修改数据需要手动调用`$apply`方法。如：
+
 ```
 setTimeout(() => {
     this.title = 'this is title';
